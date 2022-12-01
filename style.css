@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+:root {
+    --wrapper_color: #1C1C1C;
+    --face_color: #6943FF;
+    --textWhite: #fff;
+    --darker_bg: #1F2937;
+    --text_bg: #273549;
+    --text_t_color: #CCC1FF;
+    --result_color:#7cfc00;
+    --result2_color: #ffa500;
+}
+
+.wrapper {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    width: 550px;
+    height: 680px;
+    background-color: var(--wrapper_color);
+    color: var(--textWhite);
+    padding: 20px;
+}
+
+.container_input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 0;
+    width: 100%;
+    height: 30%;
+    background-color: var(--face_color);
+}
+
+p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#addText {
+    color: var(--text_t_color);
+    font-size: 38px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid var(--textWhite);
+    background: var(--text_bg);
+    height: 40%;
+    width: 25%;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+::placeholder {
+    font-size: small;
+    color: var(--text_t_color);
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+
+
+button {
+    height: 15%;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.res_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    background-color: var(--darker_bg);
+}
+
+.section1,
+.section2,
+.section3 {
+    height: 25%;
+    width: 90%;
+    background-color: var(--text_bg);
+}
+
+
+
+
+h3 {
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--text_t_color);
+    margin-top: 25px;
+}
+
+#res1,
+#res2,
+#res3 {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--textWhite);
+    margin-top: 10px;
+}
+
+span {
+
+    color: var(--result_color);
+}
+
+strong {
+    font-weight: 600;
+    color: var(--result2_color);
+}
